@@ -35,12 +35,18 @@ namespace trabajogrupalEDDatos
             //y la función vuelve a llamarse a sí misma.
 
             if (contador > 0)
+            {
                 return usuario;
+            }
             else
             {
                 Console.WriteLine("Usuario o contraseña incorrectos");
                 IngresoUsuario(diccionario);
                 return usuario;
+
+                //PROBLEMA: si al principio se pone un usuario incorrecto y se entra en este else
+                //el usuario que se termina retornando cuando finalmente ingrese el correcto es el
+                //primer usuario incorrecto que ingresó. Ver cómo se puede arreglar.
             }
 
 
@@ -80,7 +86,7 @@ namespace trabajogrupalEDDatos
         }
         static void Main(string[] args)
         {
-            int digito;
+            int digito, opcion_elegida;
             string nombre_usuario, password;
             //Como no tenemos BD usamos un diccionario con el par usuario/clave.
             Hashtable diccioUsuarios = new Hashtable();
@@ -93,7 +99,7 @@ namespace trabajogrupalEDDatos
             digito = Convert.ToInt32(Console.ReadLine());
 
             //Valida que se haya ingresado 1 o 2
-            while (digito != 1 || digito != 2)
+            while (digito != 1 && digito != 2)
             {
                 Console.WriteLine("Ingresó un caracter incorrecto. Intente nuevamente");
                 Console.WriteLine("Si ya posee un usuario ingrese 1; si desea generar un usuario ingrese 2");
@@ -118,6 +124,16 @@ namespace trabajogrupalEDDatos
                 Console.WriteLine("Bienvenido {0}", nombre_usuario);
 
             }
+
+            Console.WriteLine("Porfavor ingrese el número de operación que desea realizar.");
+            Console.WriteLine("Ingresar datos de un alumno: 1");
+            Console.WriteLine("Ingresar notas: 2");
+            Console.WriteLine("Calcular Promedio de un alumno: 3");
+            Console.WriteLine("Calcular Promedio total del curso: 4");
+            Console.WriteLine("Salir: 5");
+            opcion_elegida = Convert.ToInt32(Console.ReadLine());
+
+            switch (opcion_elegida)
 
         }
     }
