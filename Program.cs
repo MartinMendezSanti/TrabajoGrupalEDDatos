@@ -48,6 +48,8 @@ namespace trabajogrupalEDDatos
 
         public static ArrayList GenerarUsuario()
         {
+            //Se le pide al usuario ingresar un usuario, una contraseña y volver a ingresar la contraseña.
+            
             string nombre_elegido, pass1, pass2;
             Console.WriteLine("Bienvenido al generador de usuario.");
             Console.WriteLine("Ingrese el nombre de usuario:");
@@ -57,6 +59,7 @@ namespace trabajogrupalEDDatos
             Console.WriteLine("Ingrese nuevamente la contraseña:");
             pass2 = Console.ReadLine();
 
+            //Valida que la contraseña ingresada las dos veces coincida.
             while (pass1 != pass2)
             {
                 Console.WriteLine("Las contraseñas no coincide. Intente nuevamente");
@@ -66,6 +69,7 @@ namespace trabajogrupalEDDatos
                 pass2 = Console.ReadLine();
             }
 
+            //Crea una lista donde guarda los valores del nombre de usuario y contraseña para devolver eso.
             Console.WriteLine("Usuario y contraseña generado exitosamente.");
             ArrayList listaUsuario = new ArrayList();
             listaUsuario.Add(nombre_elegido);
@@ -78,6 +82,7 @@ namespace trabajogrupalEDDatos
         {
             int digito;
             string nombre_usuario, password;
+            //Como no tenemos BD usamos un diccionario con el par usuario/clave.
             Hashtable diccioUsuarios = new Hashtable();
             diccioUsuarios.Add("Eduardo", "pass1");
             diccioUsuarios.Add("Mariela", "pass2");
@@ -87,6 +92,7 @@ namespace trabajogrupalEDDatos
             Console.WriteLine("Si ya posee un usuario ingrese 1; si desea generar un usuario ingrese 2");
             digito = Convert.ToInt32(Console.ReadLine());
 
+            //Valida que se haya ingresado 1 o 2
             while (digito != 1 || digito != 2)
             {
                 Console.WriteLine("Ingresó un caracter incorrecto. Intente nuevamente");
@@ -101,6 +107,10 @@ namespace trabajogrupalEDDatos
             }
             else if (digito == 2)
             { 
+                
+                //Llama a la función de generar usuario, que le va a devolver una lista.
+                //Guarda los elementos de esa lista en variables string y los suma al
+                //diccionario de usuario/clave.
                 ArrayList lista_user = GenerarUsuario();
                 nombre_usuario = (string) lista_user[0];
                 password = (string) lista_user[1];
