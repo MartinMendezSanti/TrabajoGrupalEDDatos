@@ -134,6 +134,18 @@ namespace trabajogrupalEDDatos
             opcion_elegida = Convert.ToInt32(Console.ReadLine());
 
             switch (opcion_elegida)
+            {
+                case "1": IngresarAlumnos();
+                        break;
+                case "2": IngresarNotas();
+                        break;
+                case "3": PromediarAlumno();
+                        break;
+                case "4": PromediarCurso();
+                        break;
+                case "5": Console.WriteLine("Gracias por usar el gestor de alumnos y cursadas");
+                        break;
+            }
 
         }
     }
