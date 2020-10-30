@@ -1,7 +1,7 @@
-C:\Users\marti\source\estructura\trabajogrupalEDDatos\bin\Debug\trabajogrupalEDDatos.exe.config
-C:\Users\marti\source\estructura\trabajogrupalEDDatos\bin\Debug\trabajogrupalEDDatos.exe
-C:\Users\marti\source\estructura\trabajogrupalEDDatos\bin\Debug\trabajogrupalEDDatos.pdb
-C:\Users\marti\source\estructura\trabajogrupalEDDatos\obj\Debug\trabajogrupalEDDatos.csprojAssemblyReference.cache
-C:\Users\marti\source\estructura\trabajogrupalEDDatos\obj\Debug\trabajogrupalEDDatos.csproj.CoreCompileInputs.cache
-C:\Users\marti\source\estructura\trabajogrupalEDDatos\obj\Debug\trabajogrupalEDDatos.exe
-C:\Users\marti\source\estructura\trabajogrupalEDDatos\obj\Debug\trabajogrupalEDDatos.pdb
+C:\Users\Teto\Desktop\ifts\tpgrupaledd\TrabajoGrupalEDDatos\obj\Debug\trabajogrupalEDDatos.csproj.CoreCompileInputs.cache
+C:\Users\Teto\Desktop\ifts\tpgrupaledd\TrabajoGrupalEDDatos\bin\Debug\trabajogrupalEDDatos.exe.config
+C:\Users\Teto\Desktop\ifts\tpgrupaledd\TrabajoGrupalEDDatos\bin\Debug\trabajogrupalEDDatos.exe
+C:\Users\Teto\Desktop\ifts\tpgrupaledd\TrabajoGrupalEDDatos\bin\Debug\trabajogrupalEDDatos.pdb
+C:\Users\Teto\Desktop\ifts\tpgrupaledd\TrabajoGrupalEDDatos\obj\Debug\trabajogrupalEDDatos.exe
+C:\Users\Teto\Desktop\ifts\tpgrupaledd\TrabajoGrupalEDDatos\obj\Debug\trabajogrupalEDDatos.pdb
+C:\Users\Teto\Desktop\ifts\tpgrupaledd\TrabajoGrupalEDDatos\obj\Debug\trabajogrupalEDDatos.csprojAssemblyReference.cache
