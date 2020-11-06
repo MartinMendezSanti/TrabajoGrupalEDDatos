@@ -41,6 +41,25 @@ namespace trabajogrupalEDDatos
                 }
             }
         }
+
+        public static void PromediarCurso(List<Alumno> listado)
+        {
+            float promedio_total = 0;
+            int contador = 0;
+            for (int i = 0; i < listado.Count; i++)
+            {
+                float promedio = (listado[i].Nota1 + listado[i].Nota2 + listado[i].Nota3) / 3;
+
+                if (promedio != 0)
+                {
+                    contador ++;
+                }
+            }
+            promedio_total = promedio_total / contador
+            Console.WriteLine("El promedio total del curso es " + promedio_total + "\n(ACLARACIÓN: No se toman en cuenta los alumnos que no poseen notas cargadas)");
+
+        }
+
         public static void BuscarAlumno(List<Alumno> lista)
         {
             //Buscar alumno
@@ -291,11 +310,11 @@ namespace trabajogrupalEDDatos
                             PromediarAlumno(listadoDeAlumnos);
                             break;
                         }
-                    /*case 5:
+                    case 5:
                         {
-                            PromediarCurso();
+                            PromediarCurso(listadoDeAlumnos);
                             break;
-                        }*/
+                        }
                     case 6:
                         {
                             Console.WriteLine("\nEste curso tiene " + listadoDeAlumnos.Count + " alumnos.\n");
