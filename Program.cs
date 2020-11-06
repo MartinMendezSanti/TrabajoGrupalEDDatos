@@ -45,17 +45,17 @@ namespace trabajogrupalEDDatos
         public static void PromediarCurso(List<Alumno> listado)
         {
             float promedio_total = 0;
-            int contador = 0;
+            float contador = 0;
             for (int i = 0; i < listado.Count; i++)
             {
                 float promedio = (listado[i].Nota1 + listado[i].Nota2 + listado[i].Nota3) / 3;
-
+                promedio_total = promedio_total + promedio;
                 if (promedio != 0)
                 {
                     contador ++;
                 }
             }
-            promedio_total = promedio_total / contador
+            promedio_total = promedio_total / contador;
             Console.WriteLine("El promedio total del curso es " + promedio_total + "\n(ACLARACIÓN: No se toman en cuenta los alumnos que no poseen notas cargadas)");
 
         }
